@@ -1,17 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class enemyBehavior : MonoBehaviour {
+public class enemyMovement : MonoBehaviour {
 
 	[HideInInspector]
 	public bool facingRight = true;			// For determining which way the player is currently facing.
+	[HideInInspector]
+	public bool isDead = false;
+	public float minY = 0.2f;
 
-	
 	public float moveForce = 365f;			// Amount of force added to move the player left and right.
 	public float maxSpeed = 5f;				// The fastest the player can travel in the x axis.
 
 	private float direction=0;
-	private bool isDead = false;
+
 	//private Animator anim;					// Reference to the player's animator component.
 	
 	
@@ -19,6 +21,7 @@ public class enemyBehavior : MonoBehaviour {
 	{
 		//anim = GetComponent<Animator>();
 		InvokeRepeating ("changeMov", 0.0f, 1.0f);
+		GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, -1.0f);
 	}
 	
 	void changeMov(){
@@ -36,7 +39,9 @@ public class enemyBehavior : MonoBehaviour {
 	{
 		if (!isDead) {
 			//anim.SetFloat("Speed", Mathf.Abs(h));
-		
+			if(transform.position.y<minY) {
+				GetComponent<Rigidbody2D> ().velocity = new Vector2 (GetComponent<Rigidbody2D> ().velocity.x, 0.0f);
+			}
 			if (direction * GetComponent<Rigidbody2D> ().velocity.x < maxSpeed)
 				GetComponent<Rigidbody2D> ().AddForce (Vector2.right * direction * moveForce);
 		
@@ -59,26 +64,5 @@ public class enemyBehavior : MonoBehaviour {
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
-
-	void die() {
-		isDead = true;
-		Rigidbody2D r = GetComponent<Rigidbody2D> ();
-		r.gravityScale = 1.0f;
-		r.fixedAngle = false;
-	}
-
-	void OnTriggerEnter2D( Collider2D col) {
-		if (col.tag == "playerBullet") {
-			Destroy (col.gameObject);
-			die ();
-		}
-	}
-
-	void OnCollisionEnter2D( Collision2D col) {
-		if (col.collider.tag == "ground") {
-			GetComponent<Rigidbody2D> ().isKinematic = true;
-			gameObject.GetComponent<PolygonCollider2D>().tag = "ground";
-			gameObject.layer = col.gameObject.layer;
-		}
-	}
+	
 }
