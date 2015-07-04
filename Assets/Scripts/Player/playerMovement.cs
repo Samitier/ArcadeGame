@@ -35,7 +35,7 @@ public class playerMovement : MonoBehaviour {
 		//grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
 		walled = Physics2D.Linecast(transform.position, wallCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
 
-		if (Input.GetKeyDown(KeyCode.W) && grounded) {
+		if ((Input.GetKeyDown(KeyCode.W)||Input.GetKeyDown(KeyCode.UpArrow)) && grounded) {
 			jump = true;
 		}
 	}
