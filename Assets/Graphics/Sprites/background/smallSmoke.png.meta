@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: 7323caa35bf44461b8f46f71821c4eca
+timeCreated: 1437325068
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: smallSmoke_0
+    21300002: smallSmoke_1
+    21300004: smallSmoke_2
+    21300006: smallSmoke_3
+    21300008: smallSmoke_4
+    21300010: smallSmoke_5
+    21300012: smallSmoke_6
+    21300014: smallSmoke_7
+    21300016: smallSmoke_8
+    21300018: smallSmoke_9
+    21300020: smallSmoke_10
+    21300022: smallSmoke_11
+    21300024: smallSmoke_12
+    21300026: smallSmoke_13
+    21300028: smallSmoke_14
+    21300030: smallSmoke_15
+    21300032: smallSmoke_16
+    21300034: smallSmoke_17
+    21300036: smallSmoke_18
+    21300038: smallSmoke_19
+    21300040: smallSmoke_20
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: smallSmoke_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_1
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 400
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_2
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 400
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_3
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 400
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_4
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 400
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_5
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 400
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_6
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 400
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_8
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 200
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_9
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 200
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_10
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 200
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_11
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 200
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_12
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 200
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_13
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 200
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_15
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 0
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_16
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 0
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_17
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 0
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_18
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 0
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_19
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 0
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallSmoke_20
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 0
+        width: 355
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
