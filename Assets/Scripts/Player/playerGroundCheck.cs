@@ -5,7 +5,7 @@ public class playerGroundCheck : MonoBehaviour {
 
 	void OnTriggerStay2D( Collider2D col) {
 		if (col.gameObject.layer == LayerMask.NameToLayer ("Ground")) {
-			GetComponentInParent<playerMovement> ().grounded = true;
+			if(GetComponentInParent<playerMovement>() != null) GetComponentInParent<playerMovement> ().grounded = true;
 		}
 	}
 
