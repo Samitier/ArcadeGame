@@ -8,7 +8,9 @@ public class playerLife : MonoBehaviour {
 	public float timeInvincible =3.0f;
 
 	private float time = 0.0f;
-	private bool isInvincible = false;
+
+	[HideInInspector]
+	public bool isInvincible = false;
 
 	void Update() {
 		if (isInvincible) {

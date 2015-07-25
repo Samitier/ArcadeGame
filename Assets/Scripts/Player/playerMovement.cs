@@ -43,7 +43,6 @@ public class playerMovement : MonoBehaviour {
 	
 	void FixedUpdate ()
 	{
-		grounded = true;
 
 		float h = Input.GetAxis("Horizontal");
 

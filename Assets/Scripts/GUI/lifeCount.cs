@@ -26,7 +26,7 @@ public class lifeCount : MonoBehaviour {
 	}
 
 	void respawn() {
-			player.transform.position = new Vector3(0.0f,2.0f,0.0f);
+		player.transform.position = new Vector3(transform.position.x,transform.position.y,player.transform.position.z);
 			player.SetActive(true);
 			player.SendMessage("respawn");
 	}
