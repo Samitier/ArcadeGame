@@ -17,6 +17,7 @@ public class playerMovement : MonoBehaviour {
 
 	private Transform groundCheck;			// A position marking where to check if the player is grounded.
 	private Transform wallCheck;			// A position marking where to check if the player is grounded.
+	private Transform sprite;
 
 	private bool walled = false;
 	//private Animator anim;					// Reference to the player's animator component.
@@ -26,6 +27,7 @@ public class playerMovement : MonoBehaviour {
 	{
 		//groundCheck = transform.Find("groundCheck");
 		wallCheck = transform.Find("wallCheck");
+		sprite = transform.Find("sprites");
 		//anim = GetComponent<Animator>();
 	}
 	
@@ -35,7 +37,7 @@ public class playerMovement : MonoBehaviour {
 		//grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
 		walled = Physics2D.Linecast(transform.position, wallCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
 
-		if ((Input.GetKeyDown(KeyCode.W)||Input.GetKeyDown(KeyCode.UpArrow)) && grounded) {
+		if ((Input.GetKeyDown(KeyCode.W)||Input.GetKeyDown(KeyCode.UpArrow))&& grounded ) {
 			jump = true;
 		}
 	}
@@ -74,6 +76,8 @@ public class playerMovement : MonoBehaviour {
 			GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpForce));
 			jump = false;
 		}
+		sprite.Rotate (new Vector3 (0, 0, 1), Mathf.Abs (GetComponent<Rigidbody2D> ().velocity.x)*-3.0f);
+
 	}
 	
 	

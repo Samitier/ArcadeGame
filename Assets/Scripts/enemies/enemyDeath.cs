@@ -26,7 +26,7 @@ public class enemyDeath : MonoBehaviour {
 
 	void solidify() {
 		GetComponent<Rigidbody2D> ().isKinematic = true;
-		gameObject.GetComponent<BoxCollider2D>().tag = "ground";
+		gameObject.GetComponent<PolygonCollider2D>().tag = "ground";
 	}
 	
 	void OnTriggerEnter2D( Collider2D col) {

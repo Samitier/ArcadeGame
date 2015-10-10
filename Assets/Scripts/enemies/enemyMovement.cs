@@ -48,21 +48,8 @@ public class enemyMovement : MonoBehaviour {
 			if (Mathf.Abs (GetComponent<Rigidbody2D> ().velocity.x) > maxSpeed)
 				GetComponent<Rigidbody2D> ().velocity = new Vector2 (Mathf.Sign (GetComponent<Rigidbody2D> ().velocity.x) * maxSpeed, GetComponent<Rigidbody2D> ().velocity.y);
 		
-			if (direction > 0 && !facingRight)
-				Flip ();
-			else if (direction < 0 && facingRight)
-				Flip ();
 		}
 	}
-	
-	
-	void Flip ()
-	{
-		facingRight = !facingRight;
-		
-		Vector3 theScale = transform.localScale;
-		theScale.x *= -1;
-		transform.localScale = theScale;
-	}
+
 	
 }
