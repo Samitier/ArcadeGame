@@ -27,7 +27,7 @@ public class cameraControl : MonoBehaviour {
 		void FixedUpdate ()
 		{
 		 if(player.activeSelf) 
-			if(!player.GetComponent<playerLife>().isInvincible)
+			if(!player.GetComponent<playerLife>().isInvincible && player.GetComponent<playerMovement>().grounded)
 				TrackPlayer();
 		}
 		

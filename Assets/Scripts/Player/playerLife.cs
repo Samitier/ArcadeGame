@@ -7,18 +7,29 @@ public class playerLife : MonoBehaviour {
 	public float respawnTime=2.0f;
 	public float timeInvincible =3.0f;
 
+	private Component[] sprites;
 	private float time = 0.0f;
 
 	[HideInInspector]
 	public bool isInvincible = false;
 
+	void Start() {
+		sprites = gameObject.GetComponentsInChildren <SpriteRenderer>();
+	}
+
+
 	void Update() {
 		if (isInvincible) {
 			time += Time.deltaTime;
-			SpriteRenderer rend = gameObject.GetComponent<SpriteRenderer>();
-			if(time<=0.5f) rend.color = new Vector4(rend.color.r, rend.color.g, rend.color.b, 1.0f - (time / 0.5f));
+			if(time<=0.5f) {
+				foreach(SpriteRenderer rend in sprites) {
+					rend.color = new Vector4(rend.color.r, rend.color.g, rend.color.b, 1.0f - (time / 0.5f));
+				}
+			}
 			else {
-				rend.color = new Vector4(rend.color.r, rend.color.g, rend.color.b, (time-0.5f) / 0.5f);
+				foreach(SpriteRenderer rend in sprites) {
+					rend.color = new Vector4(rend.color.r, rend.color.g, rend.color.b, (time-0.5f) / 0.5f);
+				}
 				if(time>=1.0f) time-=1.0f;
 			}
 		}
